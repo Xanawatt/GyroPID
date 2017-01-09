@@ -51,7 +51,7 @@ public class Drive extends Subsystem implements PIDSource, PIDOutput {
 
 	@Override
 	public double pidGet() {
-		return gyro.pidGet();
+		return gyro.getAngle();
 	}
 	
 	public void Dashboard() {
